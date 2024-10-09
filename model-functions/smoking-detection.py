@@ -6,9 +6,9 @@ import cvzone
 model = YOLO(r'models\smoking-detection-model.pt', task="detect")
 
 # Open video capture
-# cap = cv2.VideoCapture(r"E:\coding\project\Smoking-Detection\media\samples\v7.webm")
+
 cap = cv2.VideoCapture(r"E:\coding\project\Smoking-Detection\media\samples\v8.webm")
-# cap = cv2.VideoCapture(r"E:\coding\project\Smoking-Detection\media\samples\v6.mp4")
+
 
 def iou(boxA, boxB):
     # Compute the intersection over union (IoU) between two bounding boxes
