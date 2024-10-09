@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import cvzone
 
 # Load the YOLOv8 model
-model = YOLO(r'E:\coding\project\Smoking-Detection\best2.pt', task="detect")
+model = YOLO(r'models\smoking-detection-model.pt', task="detect")
 
 # Open video capture
 # cap = cv2.VideoCapture(r"E:\coding\project\Smoking-Detection\media\samples\v7.webm")

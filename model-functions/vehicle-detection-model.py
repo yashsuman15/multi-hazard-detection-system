@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import cvzone
 
 # Load the YOLOv8 model
-model = YOLO(r"E:\coding\project\vehicle-detection-model\runs\kaggle\working\runs\detect\train\weights\best.pt", task="detect")
+model = YOLO(r"models\vehicle-detection-model.pt", task="detect")
 
 # Open video capture
 cap = cv2.VideoCapture(r"E:\coding\project\vehicle-detection-model\media-sample\v1.mp4")

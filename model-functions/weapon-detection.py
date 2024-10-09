@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import cvzone
 
 # Load the YOLOv8 model
-model = YOLO(r'E:\coding\project\weapon detection\runs\detect\train3\weights\best.pt', task="detect")
+model = YOLO(r'models\weapon-detection-model.pt', task="detect")
 
 # Open video capture
 cap = cv2.VideoCapture(r"E:\coding\project\weapon detection\w12.mp4")

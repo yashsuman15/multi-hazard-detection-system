@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import cvzone
 
 # Load the YOLOv8 model
-model = YOLO(r"E:\coding\project\fire-smoke-detection\kaggle\working\runs\detect\train\weights\best.pt", task="segment")
+model = YOLO(r"models\fire-detection-model.pt", task="segment")
 
 # Open video capture
 
