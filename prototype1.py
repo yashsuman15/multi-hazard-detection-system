@@ -204,13 +204,7 @@ def main():
     # Initialize the detection system
     detector = UnifiedDetectionSystem()
      
-    smoking_sample = r"E:\coding\project\Smoking-Detection\media\samples\v8.webm"
-    fire_sample = r"E:\coding\project\fire-smoke-detection\sample-media\f3.mp4"
-    crowd_sample = r"E:\coding\project\crowd-density-model\sample-media\c3.webm"
-    vehicle_sample = r"E:\coding\project\vehicle-detection-model\media-sample\v1.mp4"
-    weapon_sample = r"E:\coding\project\weapon detection\w12.mp4"
-    
-    video_path = weapon_sample
+    video_path = r"sample-media\MHDS sample video 2.mp4"
     
     # Open video capture
     cap = cv2.VideoCapture(video_path)  # Use 0 for webcam or provide video path
