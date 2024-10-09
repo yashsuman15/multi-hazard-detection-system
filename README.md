@@ -1,0 +1,1 @@
+This project is a deep learning-based computer vision system that detects multiple hazards, including people smoking cigarettes, fire detection, vehicle detection, crowd density monitoring, and handgun detection. It uses YOLOv11, powered by PyTorch and OpenCV, to perform real-time detection of these hazards in video feeds.
