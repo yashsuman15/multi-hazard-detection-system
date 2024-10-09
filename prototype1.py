@@ -44,7 +44,7 @@ class UnifiedDetectionSystem:
             
             # Get model info
             model_info = self.model_info[current_mode]
-            indicator_text = f"Activated: {model_info['name']}"
+            indicator_text = f"ACTIVATED: {model_info['name']}"
             
             # Create background rectangle
             text_size = cv2.getTextSize(indicator_text, cv2.FONT_HERSHEY_SIMPLEX, 0.7, 2)[0]
@@ -170,7 +170,7 @@ class UnifiedDetectionSystem:
             class_id = int(result.cls[0])
             class_name = self.vehicle_model.names[class_id]
             
-            if confidence > 0.4:
+            if confidence > 0.6:
                 color = self.vehicle_colors.get(class_name.lower(), self.DEFAULT_COLOR)
                 cv2.rectangle(frame, (x1, y1), (x2, y2), color, 2)
                 
