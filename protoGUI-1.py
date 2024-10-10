@@ -32,11 +32,11 @@ class HazardDetectionGUI:
         
         # Create left panel for controls
         self.control_panel = ctk.CTkFrame(self.main_frame, width=200)
-        self.control_panel.pack(side="left", fill="y", padx=5, pady=5)
+        self.control_panel.pack(side="right", fill="y", padx=5, pady=5)
         
         # Create video display area
         self.video_frame = ctk.CTkFrame(self.main_frame)
-        self.video_frame.pack(side="right", fill="both", expand=True, padx=5, pady=5)
+        self.video_frame.pack(side="left", fill="both", expand=True, padx=5, pady=5)
         
         self.video_label = ctk.CTkLabel(self.video_frame, text="No video loaded")
         self.video_label.pack(fill="both", expand=True)
