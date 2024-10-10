@@ -53,6 +53,18 @@ class HazardDetectionGUI:
         # Add controls
         self.create_control_panel()
         
+        # Add creator credit at the bottom
+        credit_frame = ctk.CTkFrame(self.root, fg_color="transparent")
+        credit_frame.pack(side="bottom", fill="x", padx=10, pady=(0, 5))
+        
+        credit_label = ctk.CTkLabel(
+            credit_frame,
+            text="Created by: Yash Raj Suman",
+            font=("Helvetica", 12),
+            text_color=("gray70", "gray30")  # (light mode color, dark mode color)
+        )
+        credit_label.pack(side="right", padx=10)
+        
     def create_control_panel(self):
         # Title
         title_label = ctk.CTkLabel(
