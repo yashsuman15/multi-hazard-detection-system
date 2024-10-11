@@ -4,7 +4,6 @@ from PIL import Image, ImageTk
 import threading
 from pathlib import Path
 from tkinter import filedialog
-from ultralytics import YOLO
 from prototype1 import UnifiedDetectionSystem
 from datetime import datetime
 import os
