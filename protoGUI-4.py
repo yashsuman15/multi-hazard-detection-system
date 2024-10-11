@@ -121,7 +121,7 @@ class HazardDetectionGUI:
         
         title_label = ctk.CTkLabel(
             logo_frame,
-            text="🎯 Multi Hazard Detection System",
+            text="💫 Multi Hazard Detection System",
             font=("Helvetica", 20, "bold"),
             text_color="#FFFFFF"
         )
@@ -298,8 +298,8 @@ class HazardDetectionGUI:
                 modes_frame,
                 text=mode_text,
                 command=lambda m=mode_value: self.set_detection_mode(m),
-                fg_color="#303030",
-                hover_color="#404040"
+                # fg_color="#303030",
+                # hover_color="#404040"
             )
             btn.pack(pady=5, padx=10, fill="x")
             
@@ -321,7 +321,7 @@ class HazardDetectionGUI:
         # Status message
         self.status_label = ctk.CTkLabel(
             footer,
-            text="System Ready",
+            text="In-Development Deep Learning Model",
             text_color="#808080"
         )
         self.status_label.pack(side="left", padx=20)
