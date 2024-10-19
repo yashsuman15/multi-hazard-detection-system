@@ -90,7 +90,4 @@ The Multi Hazard Detection System is an advanced computer vision application tha
 
 Created by: Yash Raj Suman
 
-## License
-
-[Include your license information here]
 
